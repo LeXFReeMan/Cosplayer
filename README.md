@@ -1,26 +1,18 @@
 ##### :heavy_exclamation_mark: Status :heavy_exclamation_mark:
 Should work on all regions as long as the opcodes are mapped but I personally only test modules on NA with Caali's tera-proxy: https://discord.gg/maqBmJV  
 
-##### :heavy_exclamation_mark: Installation for Caali's tera-proxy :heavy_exclamation_mark:
-1) Download Cosplayer: https://github.com/TeraProxy/Cosplayer/archive/master.zip
-2) Extract the contents of the zip file into "\tera-proxy\bin\node_modules\"
-3) Done! (the module will auto-update when a new version is released)
-
-##### :heavy_exclamation_mark: Installation for PinkiePie's tera-proxy :heavy_exclamation_mark:
-1) Update your tera-data: https://github.com/meishuu/tera-data
-2) Download Cosplayer: https://github.com/TeraProxy/Cosplayer/archive/master.zip
-3) Download tera-game-state: https://github.com/hackerman-caali/tera-game-state/archive/master.zip
-4) Extract the contents of both zip files into "\tera-proxy\bin\node_modules\"
-5) Done!
-6) Check back here once in a while for updates (do NOT overwrite presets.json or you will lose your saved outfits!)
+##### :heavy_exclamation_mark: Branch :heavy_exclamation_mark:
+Can currently not release this to the master branch. Hat restyle is fully working if you map the opcodes.
 
 If you enjoy my work and wish to support future development, feel free to drop me a small donation: [![Donate](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=A3KBZUCSEQ5RJ&lc=US&item_name=TeraProxy&curency_code=USD&no_note=1&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
 
-## New in version 2.1
-### Custom Mount Support
-Now even your mount can cosplay with you!  
-Right click on mounts in the Dressing Room to change your used mount in game.  
-Careful though: Only use ground mounts for ground mounts and flying mounts for flying mounts or you might be unable to dismount (you can easily fix this by using the "cosplay dismount" command though)  
+## New in version 2.2
+### Hat Restyling Support
+Getting annoyed on how your new hat doesn't actually fit your character's head? Not anymore!  
+Cosplayer is now able to let you restyle your custom head accessory with the ingame hat restyler, FOR FREE!  
+If you want to restyle your real (server side) head accessory, simply use "cosplay undress" before using the hat restyler.  
+
+![Screenshot](https://i.imgur.com/m8X358f.jpg)
 
 # Cosplayer
 A tera-proxy module able to change your client-side appearance.  
@@ -31,6 +23,8 @@ Changes to your character are saved on your hard drive and reloaded on next logi
 2) Hover over an item until you see its tooltip appear  
 3) Right click  
 That's it! Or use one of the many commands below.  
+
+:heavy_exclamation_mark: Careful with mounts: Only use ground mounts for custom ground mounts and flying mounts for custom flying mounts or you might be unable to dismount (you can easily fix this by using the "cosplay dismount" command though) :heavy_exclamation_mark:  
 
 While in game, open a proxy chat session by typing "/proxy" or "/8" in chat and hitting the space bar.  
 This serves as the script's command interface.  
@@ -67,6 +61,9 @@ Thanks to Incedius for help with custom mount support -> https://github.com/ince
 ## Changelog
 <details>
 
+### 2.2.0
+* [+] Added Hat Restyler support for custom head accessories
+* [*] Now using the new contract submodule of tera-game-state
 ### 2.1.4
 * [*] Presets file now gets generated when not present which fixes an error with auto-update
 ### 2.1.3
