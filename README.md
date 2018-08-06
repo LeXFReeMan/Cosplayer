@@ -6,11 +6,9 @@ Can currently not release this to the master branch. Hat restyle is fully workin
 
 If you enjoy my work and wish to support future development, feel free to drop me a small donation: [![Donate](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=A3KBZUCSEQ5RJ&lc=US&item_name=TeraProxy&curency_code=USD&no_note=1&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
 
-## New in version 2.2
-### Hat Restyling Support
-Getting annoyed on how your new hat doesn't actually fit your character's head? Not anymore!  
-Cosplayer is now able to let you restyle your custom head accessory with the ingame hat restyler, FOR FREE!  
-If you want to restyle your real (server side) head accessory, simply use "cosplay undress" before using the hat restyler.  
+## New in version 2.2.1
+### Localization
+Item and mount databases are now localized and Cosplayer will only download the correct version for your region to save bandwidth and disk space.
 
 ![Screenshot](https://i.imgur.com/m8X358f.jpg)
 
@@ -61,6 +59,8 @@ Thanks to Incedius for help with custom mount support -> https://github.com/ince
 ## Changelog
 <details>
 
+### 2.2.1
+* [+] Added localization for JP, KR, RU, TH, TW regions
 ### 2.2.0
 * [+] Added Hat Restyler support for custom head accessories
 * [*] Now using the new contract submodule of tera-game-state

@@ -1,4 +1,4 @@
-// Version 2.2.0
+// Version 2.2.1
 // Thanks to Kourin for a better way to generate the Dressing Room -> https://github.com/Mister-Kay
 // Thanks to Incedius for help with custom mount support -> https://github.com/incedius
 // Special thanks to Pinkie Pie for the original elin-magic code -> https://github.com/pinkipi
@@ -28,15 +28,26 @@ const Command = require('command'),
 	SLOTS = [
 		"face", "styleHead", "styleFace", "styleBack", "styleWeapon", "weaponEnchant", "styleBody", "styleBodyDye", "styleFootprint", "underwear",
 		"styleHeadScale"
-	],
-	items = require('./items'),
-	mounts = require('./mounts'),
-	weapons = Object.keys(items.categories.style.weapon)
+	]
+	
+let items = null,
+	mounts = null
 
 module.exports = function cosplayer(dispatch) {
 
+	if(dispatch.region != "na" && dispatch.region != "eu") {
+		items = require('./items/items.' + dispatch.region + '.json'),
+		mounts = require('./mounts/mounts.' + dispatch.region + '.json')
+	}
+	else {
+		items = require('./items/items.json'),
+		mounts = require('./mounts/mounts.json')
+	}
+
 	const command = Command(dispatch),
-		game = GameState(dispatch)
+		game = GameState(dispatch),
+		weapons = Object.keys(items.categories.style.weapon)
+
 	game.initialize("contract")
 
 	let job = -1,
