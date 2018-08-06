@@ -1,4 +1,5 @@
 {
+	"force_clean": true,
 	"files": {
 		"index.js": "5fe456600978eb612fddb31eeeeb603cee7d00ccab00bd2fbd159519363cd4b0",
 		"LICENSE": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
