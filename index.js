@@ -1,4 +1,4 @@
-// Version 2.2.1
+// Version 2.2.2
 // Thanks to Kourin for a better way to generate the Dressing Room -> https://github.com/Mister-Kay
 // Thanks to Incedius for help with custom mount support -> https://github.com/incedius
 // Special thanks to Pinkie Pie for the original elin-magic code -> https://github.com/pinkipi
@@ -252,7 +252,7 @@ module.exports = function cosplayer(dispatch) {
 		if(game.me.is(event.target)) {
 			if(event.id == 10155130) // Ragnarok
 				changeAppearance()
-			else if(event.id == 401705) // Unleashed
+			else if(event.id == 401730) // Unleashed
 				unleashed = true
 		}
 	})
@@ -261,7 +261,7 @@ module.exports = function cosplayer(dispatch) {
 		if(game.me.is(event.target)) {
 			if(event.id == 10155130) // Ragnarok
 				changeAppearance()
-			else if(event.id == 401705) // Unleashed
+			else if(event.id == 401730) // Unleashed
 				unleashed = false
 		}
 	})

@@ -1,7 +1,7 @@
 {
 	"force_clean": true,
 	"files": {
-		"index.js": "0b949a0f1e9ffbb655eb905c90573a6028018fdfca43608c02cfb589d3bc1ae6",
+		"index.js": "5fe456600978eb612fddb31eeeeb603cee7d00ccab00bd2fbd159519363cd4b0",
 		"LICENSE": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
 		"module.json": "a786a4627732b8ad23af237792f7560ef4ef787936a38b9a47e4afd71b51cdc3",
 		"mouse.js": "9a9ba63573058558fcf9883db7b8a54ba653c557474e5a7de78f7797f0e0283e",
@@ -10,7 +10,7 @@
 			"overwrite": false,
 			"hash": "c1d99d197398caa7ec530428472831c5f836be5b5be9a145cb98bd70a9901dd0"
 		},
-		"README.md": "376c29a10fb60d56553ee0fb44bbc9b1eaddb1a49ab19233b038137aa978081f",
+		"README.md": "a569029482f716318e6b788d297e831344c973631cc539f1365aa6462487749d",
 		"items/items.jp.json": {
 			"region": "jp",
 			"hash": "9cd3d2e1432e8e235cf6498c26de23017614db297f1cca0a0d0fda5b94dc16ba"
